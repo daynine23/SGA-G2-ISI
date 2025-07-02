@@ -55,4 +55,18 @@ public class AlumnoAsesorado {
     public String getPrograma() {return programa;}
 
     public void setPrograma(String programa) {this.programa = programa;}
+
+    @Override
+    public String toString() {
+        return "AlumnoAsesorado{" +
+                "alumnold=" + alumnold +
+                ", nombres='" + nombres + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", correo='" + correo + '\'' +
+                ", dni='" + dni + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", codigoAlumno='" + codigoAlumno + '\'' +
+                ", programa='" + programa + '\'' +
+                '}';
+    }
 }

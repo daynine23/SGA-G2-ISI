@@ -25,4 +25,13 @@ public class SeguimientoSesion {
     public String getTemaTratado() {return temaTratado;}
 
     public void setTemaTratado(String temaTratado) {this.temaTratado = temaTratado;}
+
+    @Override
+    public String toString() {
+        return "SeguimientoSesion{" +
+                "seguimientoSesionId=" + seguimientoSesionId +
+                ", fecha=" + fecha +
+                ", temaTratado='" + temaTratado + '\'' +
+                '}';
+    }
 }

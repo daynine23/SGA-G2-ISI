@@ -6,13 +6,15 @@ public class FichaConsolidada {
 
     private Long fichald;
     private String tituloProyecto;
+    private AlumnoAsesorado alumno;
     private Date fechaInicio;
     private Integer avance;
     private String estado;
 
-    public FichaConsolidada(Long fichald, String tituloProyecto, Date fechaInicio, Integer avance, String estado) {
+    public FichaConsolidada(Long fichald, String tituloProyecto, Date fechaInicio, Integer avance, String estado, AlumnoAsesorado alumno) {
         this.fichald = fichald;
         this.tituloProyecto = tituloProyecto;
+        this.alumno = alumno;
         this.fechaInicio = fechaInicio;
         this.avance = avance;
         this.estado = estado;
@@ -37,4 +39,12 @@ public class FichaConsolidada {
     public String getEstado() {return estado;}
 
     public void setEstado(String estado) {this.estado = estado;}
+
+    public AlumnoAsesorado getAlumno() {
+        return alumno;
+    }
+
+    public void setAlumno(AlumnoAsesorado alumno) {
+        this.alumno = alumno;
+    }
 }
